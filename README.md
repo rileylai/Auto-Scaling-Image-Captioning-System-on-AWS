@@ -2,7 +2,7 @@
 
 This project demonstrates a **highly available, scalable, and secure image captioning platform** deployed on AWS. It uses a Flask-based web interface combined with an event-driven serverless backend for asynchronous processing and storage of uploaded images.
 
-## 📌 Features
+## Features
 
 - Flask web application running in an EC2 Auto Scaling Group
 - User image uploads stored securely in S3
@@ -56,13 +56,13 @@ This project demonstrates a **highly available, scalable, and secure image capti
 - `thumbnail_function`: Creates 128x128 thumbnail with Pillow
 - Both triggered by S3 events via EventBridge
 
-## 🧪 Auto Scaling Test
+## Auto Scaling Test
 
 ### Load Test Tool
 Used **ApacheBench (ab)** to simulate high traffic:
 
 ```bash
-ab -n 10000 -c 100 http://<your-alb-dns>/gallery
+ab -n 10000 -c 100 http://<alb-dns>/gallery
 ```
 
 - `-n 10000`: Total 10,000 requests
@@ -72,11 +72,6 @@ ab -n 10000 -c 100 http://<your-alb-dns>/gallery
 - CPU utilization exceeded 60% ➜ **scale-out** triggered
 - EC2 instances increased from 1 to 3
 - When CPU dropped below 30% ➜ **scale-in** occurred
-
-📸 Screenshots included:
-- EC2 instance scaling behavior
-- Target group registration status
-- CloudWatch CPU metrics
 
 ## Security
 
