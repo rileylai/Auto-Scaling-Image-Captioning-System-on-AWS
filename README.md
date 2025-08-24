@@ -23,8 +23,8 @@ This project demonstrates a **highly available, scalable, and secure image capti
 - **Routing**: IGW for inbound, NAT for outbound
 
 ### Diagram
-![Web Architecture](https://imgur.com/a/hNVzDRl)
-![Serverless Architecture](https://imgur.com/a/efi2WA2)
+![Web Architecture](https://i.imgur.com/LCHaXxw.png)
+![Serverless Architecture](https://i.imgur.com/bPHiXgj.png)
 
 ## Deployment Summary
 
